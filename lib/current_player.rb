@@ -9,6 +9,7 @@ def turn_count(board)
       counter += 1
     end
   end
+  move_count.lenght.to_i
 end
 
 def current_player(board)
