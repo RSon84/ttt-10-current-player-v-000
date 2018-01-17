@@ -1,15 +1,14 @@
 def turn_count(board)
 
-  move_count = []
+  i = 0
   board.each do |token|
     counter = 0
     if token == "X" || token == "O"
-      move_count.push(1)
+      i += 1
     else
       counter += 1
     end
   end
-  move_count.length.to_i
 end
 
 def current_player(board)
