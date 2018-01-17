@@ -1,10 +1,10 @@
 def turn_count(board)
 
-  i = 0
+  move_count = []
   board.each do |token|
     counter = 0
     if token == "X" || token == "O"
-      i += 1
+      move_count.push(1)
     else
       counter += 1
     end
